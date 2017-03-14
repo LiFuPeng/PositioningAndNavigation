@@ -15,6 +15,7 @@
 		A6B10F101E6D4BFF00B5B1FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B10F0E1E6D4BFF00B5B1FD /* LaunchScreen.storyboard */; };
 		A6B10F1B1E6D4BFF00B5B1FD /* PositioningAndNavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B10F1A1E6D4BFF00B5B1FD /* PositioningAndNavigationTests.m */; };
 		A6B10F261E6D4BFF00B5B1FD /* PositioningAndNavigationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B10F251E6D4BFF00B5B1FD /* PositioningAndNavigationUITests.m */; };
+		A6B10F351E6D4C9F00B5B1FD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B10F341E6D4C9F00B5B1FD /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A6B10F211E6D4BFF00B5B1FD /* PositioningAndNavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PositioningAndNavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B10F251E6D4BFF00B5B1FD /* PositioningAndNavigationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PositioningAndNavigationUITests.m; sourceTree = "<group>"; };
 		A6B10F271E6D4BFF00B5B1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6B10F341E6D4C9F00B5B1FD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B10F351E6D4C9F00B5B1FD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				A6B10F191E6D4BFF00B5B1FD /* PositioningAndNavigationTests */,
 				A6B10F241E6D4BFF00B5B1FD /* PositioningAndNavigationUITests */,
 				A6B10EFE1E6D4BFF00B5B1FD /* Products */,
+				A6B10F331E6D4C9F00B5B1FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +142,14 @@
 				A6B10F271E6D4BFF00B5B1FD /* Info.plist */,
 			);
 			path = PositioningAndNavigationUITests;
+			sourceTree = "<group>";
+		};
+		A6B10F331E6D4C9F00B5B1FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6B10F341E6D4C9F00B5B1FD /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +219,7 @@
 				TargetAttributes = {
 					A6B10EFC1E6D4BFF00B5B1FD = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 3N2Z524WRH;
+						DevelopmentTeam = C43Z6NXGC4;
 						ProvisioningStyle = Automatic;
 					};
 					A6B10F151E6D4BFF00B5B1FD = {
@@ -427,8 +439,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3N2Z524WRH;
+				DEVELOPMENT_TEAM = C43Z6NXGC4;
 				INFOPLIST_FILE = PositioningAndNavigation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SnailLi.PositioningAndNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,8 +452,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3N2Z524WRH;
+				DEVELOPMENT_TEAM = C43Z6NXGC4;
 				INFOPLIST_FILE = PositioningAndNavigation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SnailLi.PositioningAndNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
